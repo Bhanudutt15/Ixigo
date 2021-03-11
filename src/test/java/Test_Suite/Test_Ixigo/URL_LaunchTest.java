@@ -14,6 +14,7 @@ public class URL_LaunchTest {
 	WebDriver driver = new ChromeDriver();
 	Thread.sleep(5000);
 	driver.get("https://www.ixigo.com/");
+	driver.close();
 	
 	}	
 }
