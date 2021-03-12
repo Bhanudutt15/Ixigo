@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.563 s - in TestSuite
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 72.291 s <<< FAILURE! - in TestSuite
+flightSearchTest(Test_Suite.Test_Ixigo.URL_LaunchTest)  Time elapsed: 0.358 s  <<< FAILURE!
+java.lang.AssertionError: expected [New Delhi - Bengaluru, Economy Flights, roundtrip, 25 Mar - 29 Mar] but found [ixigo - Flights, IRCTC Train Booking, Bus Booking, Air Tickets & Hotels]
+	at Test_Suite.Test_Ixigo.URL_LaunchTest.flightSearchTest(URL_LaunchTest.java:65)
+
