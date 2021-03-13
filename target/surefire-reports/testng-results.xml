@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-13T14:52:25 IST" name="Surefire suite" finished-at="2021-03-13T14:53:00 IST" duration-ms="35300">
+  <suite started-at="2021-03-13T15:00:18 IST" name="Surefire suite" finished-at="2021-03-13T15:00:51 IST" duration-ms="32526">
     <groups>
     </groups>
-    <test started-at="2021-03-13T14:52:25 IST" name="Surefire test" finished-at="2021-03-13T14:53:00 IST" duration-ms="35300">
+    <test started-at="2021-03-13T15:00:18 IST" name="Surefire test" finished-at="2021-03-13T15:00:51 IST" duration-ms="32526">
       <class name="Test_Suite.Test_Ixigo.URL_LaunchTest">
-        <test-method signature="setup()[pri:1, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T14:52:25 IST" name="setup" finished-at="2021-03-13T14:52:31 IST" duration-ms="5581" status="PASS">
+        <test-method signature="setup()[pri:1, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T15:00:18 IST" name="setup" finished-at="2021-03-13T15:00:23 IST" duration-ms="4855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyPageTest()[pri:2, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T14:52:31 IST" name="verifyPageTest" finished-at="2021-03-13T14:52:31 IST" duration-ms="17" status="PASS">
+        <test-method signature="verifyPageTest()[pri:2, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T15:00:23 IST" name="verifyPageTest" finished-at="2021-03-13T15:00:23 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTest -->
-        <test-method signature="journeyDetailTest()[pri:3, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T14:52:31 IST" name="journeyDetailTest" finished-at="2021-03-13T14:52:43 IST" duration-ms="11973" status="PASS">
+        <test-method signature="journeyDetailTest()[pri:3, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T15:00:23 IST" name="journeyDetailTest" finished-at="2021-03-13T15:00:35 IST" duration-ms="11931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- journeyDetailTest -->
-        <test-method signature="flightSearchTest()[pri:4, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T14:52:43 IST" name="flightSearchTest" finished-at="2021-03-13T14:52:57 IST" duration-ms="14016" status="PASS">
+        <test-method signature="flightSearchTest()[pri:4, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T15:00:35 IST" name="flightSearchTest" finished-at="2021-03-13T15:00:46 IST" duration-ms="11260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightSearchTest -->
-        <test-method signature="validateDetailsTest()[pri:5, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T14:52:57 IST" name="validateDetailsTest" finished-at="2021-03-13T14:52:58 IST" duration-ms="992" status="PASS">
+        <test-method signature="validateDetailsTest()[pri:5, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T15:00:46 IST" name="validateDetailsTest" finished-at="2021-03-13T15:00:47 IST" duration-ms="992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDetailsTest -->
-        <test-method signature="airlineDetailsTest()[pri:6, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T14:52:58 IST" name="airlineDetailsTest" finished-at="2021-03-13T14:53:00 IST" duration-ms="2689" status="PASS">
+        <test-method signature="airlineDetailsTest()[pri:6, instance:Test_Suite.Test_Ixigo.URL_LaunchTest@58a90037]" started-at="2021-03-13T15:00:47 IST" name="airlineDetailsTest" finished-at="2021-03-13T15:00:51 IST" duration-ms="3439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- airlineDetailsTest -->
       </class> <!-- Test_Suite.Test_Ixigo.URL_LaunchTest -->
       <class name="Test_Suite.Test_Ixigo.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:Test_Suite.Test_Ixigo.AppTest@1ad282e0]" started-at="2021-03-13T14:52:25 IST" name="shouldAnswerWithTrue" finished-at="2021-03-13T14:52:25 IST" duration-ms="4" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:Test_Suite.Test_Ixigo.AppTest@1ad282e0]" started-at="2021-03-13T15:00:18 IST" name="shouldAnswerWithTrue" finished-at="2021-03-13T15:00:18 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->

@@ -124,7 +124,7 @@ public class URL_LaunchTest {
 					//For Airline number and Departure time
 					String departTime =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[" +i + "]/div[1]/div[3]/div[1]")).getText();
 					String airlineNum =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[" +i + "]/div[1]/div[3]/div[4]")).getText();
-					System.out.println("Flight fare is " + fare + " ,Airline number is " + airlineNum + " and departure time is " + departTime);
+					System.out.println("Flight fare is " + fare + ", Airline number is " + airlineNum + " and departure time is " + departTime);
 					
 				}	
 			}
@@ -149,7 +149,7 @@ public class URL_LaunchTest {
 							//For Airline number and Departure time
 							String departTime1 =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[2]/div[1]/div[" +k + "]/div[1]/div[3]/div[1]")).getText();
 							String airlineNum1 =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[2]/div[1]/div[" +k + "]/div[1]/div[3]/div[4]")).getText();
-							System.out.println("Flight fare is " + fare1 + " ,Airline number is " + airlineNum1 + " and departure time is " + departTime1);
+							System.out.println("Flight fare is " + fare1 + ", Airline number is " + airlineNum1 + " and departure time is " + departTime1);
 							
 						}
 					}
