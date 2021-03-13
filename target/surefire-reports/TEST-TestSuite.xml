@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="42.417" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="35.672" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\asus\AppData\Local\Temp\surefire8980961238530456462\surefirebooter5818654607477916883.jar C:\Users\asus\AppData\Local\Temp\surefire8980961238530456462 2021-03-12T23-03-54_038-jvmRun1 surefire12517989327917967522tmp surefire_05259657683483043830tmp"/>
+    <property name="sun.java.command" value="C:\Users\asus\AppData\Local\Temp\surefire3431859331234423270\surefirebooter8069544015570665103.jar C:\Users\asus\AppData\Local\Temp\surefire3431859331234423270 2021-03-13T14-52-24_510-jvmRun1 surefire199398569478110572tmp surefire_03532473254594691588tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\All_In_One\SDET_Training\Test_Ixigo\target\test-classes;D:\All_In_One\SDET_Training\Test_Ixigo\target\classes;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\asus\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\asus\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\asus\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\asus\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\asus\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\asus\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\asus\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\asus\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\asus\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\asus\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\asus\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\asus\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\asus\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\asus\AppData\Local\Temp\surefire8980961238530456462\surefirebooter5818654607477916883.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\asus\AppData\Local\Temp\surefire3431859331234423270\surefirebooter8069544015570665103.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="12.0.2+10"/>
@@ -58,10 +58,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="Test_Suite.Test_Ixigo.AppTest" time="0.004"/>
-  <testcase name="setup" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="4.38"/>
-  <testcase name="verifyPageTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="0.102"/>
-  <testcase name="journeyDetailTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="12.01"/>
-  <testcase name="flightSearchTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="23.712"/>
-  <testcase name="validateDetailsTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="1.788"/>
+  <testcase name="shouldAnswerWithTrue" classname="Test_Suite.Test_Ixigo.AppTest" time="0.005"/>
+  <testcase name="setup" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="5.581"/>
+  <testcase name="verifyPageTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="0.016"/>
+  <testcase name="journeyDetailTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="11.973"/>
+  <testcase name="flightSearchTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="14.016"/>
+  <testcase name="validateDetailsTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="0.992"/>
+  <testcase name="airlineDetailsTest" classname="Test_Suite.Test_Ixigo.URL_LaunchTest" time="2.689"/>
 </testsuite>

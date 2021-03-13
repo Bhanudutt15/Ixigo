@@ -1,0 +1,17 @@
+# Created at 2021-03-13T12:54:48.851
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+
+# Created at 2021-03-13T12:55:03.965
+Unexpected IOException: 8,1,Test_Suite.Test_Ixigo.URL_LaunchTest,airlineDetailsTest(Test_Suite.Test_Ixigo.URL_LaunchTest),null,Cannot locate an element using xpath=//*[@id='content']/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[7]/div[1]/div[5]/div/div/span[2]\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-DNUT5EKF'\002C ip: '192.168.1.4'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '12.0.2'\000ADriver info: driver.version: RemoteWebDriver,null,Cannot locate an element using xpath=//*[@id='content']/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[7]/div[1]/div[5]/div/div/span[2]\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-DNUT5EKF'\002C ip: '192.168.1.4'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '12.0.2'\000ADriver info: driver.version: RemoteWebDriver,URL_LaunchTest.airlineDetailsTest:125 \00BB NoSuchElement Cannot locate an element...,org.openqa.selenium.NoSuchElementException: \000ACannot locate an element using xpath=//*[@id='content']/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[7]/div[1]/div[5]/div/div/span[2]\000AFor documentation on this error\002C please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'LAPTOP-DNUT5EKF'\002C ip: '192.168.1.4'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '12.0.2'\000ADriver info: driver.version: RemoteWebDriver\000A\0009at Test_Suite.Test_Ixigo.URL_LaunchTest.airlineDetailsTest(URL_LaunchTest.java:125)\000A
+
+
+# Created at 2021-03-13T12:55:04.230
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,TestSuite,null,null,null
+
+

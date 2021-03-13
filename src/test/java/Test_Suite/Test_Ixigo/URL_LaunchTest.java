@@ -1,15 +1,12 @@
 package Test_Suite.Test_Ixigo;
-
+import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class URL_LaunchTest {
@@ -74,7 +71,7 @@ public class URL_LaunchTest {
 	public void flightSearchTest() {
 
 	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[1]/div[6]/div/div/div[6]/button/div")).click();
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	WebElement el1 = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/div[1]/div[1]/div/div[1]"));
 	
 	//Validating the result page by verifying result page title
@@ -89,19 +86,16 @@ public class URL_LaunchTest {
 	String text ="Stops";
 	WebElement el1 = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/div[1]/div[1]/div/div[1]"));
 	String t1 = el1.getText();
-	System.out.print(text);
 	Assert.assertEquals(text, t1);
 	
 	String depart ="Departure from DEL";
 	WebElement el2 = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/div[1]/div[2]/div[1]/div[1]"));
 	String t2 = el2.getText();
-	System.out.print(t2);
 	Assert.assertEquals(depart, t2);
 	
 	String airline ="Airlines";
-	WebElement el3 = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/div[1]/div[3]/div/div[1]"));
-	String t3 = el3.getText();
-	System.out.print(t3);
+	WebElement airlineTextVerify = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/div[1]/div[3]/div/div[1]"));
+	String t3 = airlineTextVerify.getText();
 	Assert.assertEquals(airline, t3);
 	
 	//Selecting only non-Stop flights
@@ -110,8 +104,55 @@ public class URL_LaunchTest {
 	
 	//Printing the airline details
 	@Test(priority = 6)
-	public void airlineDetailsTest() {
+	public void airlineDetailsTest() {	
 		
+		List <WebElement>  el = driver.findElements(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[1]/div/div"));
+		
+		int val = el.size();		
+		String beforexpath = "//*[@id='content']/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[";
+		String afterXpath = "]/div[1]/div[5]/div/div/span[2]";
+
+				for(int i=1; i<=val;i++)
+		  {
+				String actualXpath = beforexpath + i + afterXpath;
+				WebElement element = driver.findElement(By.xpath(actualXpath));
+				String number = element.getText();
+				int fare = Integer.parseInt(number);
+				
+				if(fare<7000)
+				{	
+					//For Airline number and Departure time
+					String departTime =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[" +i + "]/div[1]/div[3]/div[1]")).getText();
+					String airlineNum =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[1]/div[1]/div[" +i + "]/div[1]/div[3]/div[4]")).getText();
+					System.out.println("Flight fare is " + fare + " ,Airline number is " + airlineNum + " and departure time is " + departTime);
+					
+				}	
+			}
+				
+			List <WebElement> el1 = driver.findElements(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[2]/div/div"));
+			int num1=	el1.size();
+
+			System.out.println();
+			String beforexpath1 = "//*[@id='content']/div/div[4]/div[1]/div/div[4]/div[2]/div[1]/div[";
+			String afterXpath1 = "]/div[1]/div[5]/div/div/span[2]";				
+			System.out.println("Return flight details");
+		
+				for(int k=1; k<=num1;k++)
+				  {
+						String actualXpath1 = beforexpath1 + k + afterXpath1;
+						WebElement element = driver.findElement(By.xpath(actualXpath1));
+						String number = element.getText();
+						int fare1 = Integer.parseInt(number);
+						
+						if(fare1<7000)
+						{	
+							//For Airline number and Departure time
+							String departTime1 =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[2]/div[1]/div[" +k + "]/div[1]/div[3]/div[1]")).getText();
+							String airlineNum1 =	driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[4]/div[1]/div/div[4]/div[2]/div[1]/div[" +k + "]/div[1]/div[3]/div[4]")).getText();
+							System.out.println("Flight fare is " + fare1 + " ,Airline number is " + airlineNum1 + " and departure time is " + departTime1);
+							
+						}
+					}
 		driver.quit();
 	}
 }

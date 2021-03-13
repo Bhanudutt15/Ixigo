@@ -5,7 +5,7 @@
     <classes>
       <class name="Test_Suite.Test_Ixigo.URL_LaunchTest">
         <methods>
-          <include name="flightSearchTest"/>
+          <include name="airlineDetailsTest"/>
         </methods>
       </class> <!-- Test_Suite.Test_Ixigo.URL_LaunchTest -->
     </classes>
